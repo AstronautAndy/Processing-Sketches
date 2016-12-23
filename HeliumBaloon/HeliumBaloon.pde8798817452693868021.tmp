@@ -1,0 +1,21 @@
+class Baloon {
+ PVector position; 
+ PVector velocity;
+ PVector acceleration;
+ 
+ void applyForce(PVector force){
+  acceleration.add(force); 
+ }
+
+}
+
+Baloon mover = new Baloon();
+
+void draw() {
+  
+ if(mousePressed) {
+  PVector wind = new PVector(0.5,0); 
+  mover.applyForce(wind);
+ }
+ 
+}

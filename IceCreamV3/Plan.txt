@@ -1,0 +1,18 @@
+Create two values: top and bottom
+fill bottom and top with initial values- start 
+possibleCombo value at 1.
+increment the top by one until you have reached the 
+"final value," counting the number of times you 
+increment. Next, increment the bottom by one,
+reset the top, and repeat
+
+The process should look something like this: 
+0-0
+0-1
+0-2 RESET
+1-0
+1-1
+1-2 RESET
+2-0
+2-1
+2-2

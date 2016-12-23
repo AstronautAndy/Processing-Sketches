@@ -1,0 +1,52 @@
+Reference types are those that are not the primitive types, including strings, arrays and file streams.
+A reference variable is a variable that stores the memory address where the object resides. 
+The value of the location of the object is not useful as a value, as it is created by the runtime system. 
+If two locations have the same value, we know they are storing the same object.
+If the reference doesn't store an object, we say that the variable holds the "null reference"
+We can change the reference number to make the variable point to a completely different object
+We can also view and manipulate the object that each variable is pointing to. 
+In C++, arithmatic on stored addresses are alowed. 
+There are only three operations in Java that can be operated on a reference type in Java:
+ - Apply a type conversion
+ - Access internal field or call a method using the dot operator
+ - To verify that the object stored is of a certain type
+
+an object is an instance of a nonprimitive type
+Primitive types are handled by value, where they store and translate values
+Reference variables, on the other hand store references to objects
+
+Discussion on the dot operator:
+The (.) will access a method or value "wrapped up" in a class or object (an instance of a class) 
+When we declare a reference variable, we provide a name for an object that will be stored in memory
+The "new" keyword is used to construct an object, which works with the constructor set in the class
+
+Java garbage collction - 
+When a constructed object is no longer referenced by a reference variable, the memory it consumes is automatically reclaimed
+This is called the "garbage collection" in the virtual machine. Once the object is unreachable by a chain of references, it can be 
+reclaimed reclaimed by the discretion of the runtime system if memory is low.
+
+lhs means "left hand side"
+rhs means "right hand side"
+
+lhs = rhs
+The value stored in rhs is copied over to lhs
+= means that stored values are copied. lhs will then point to the same object that rhs points to. 
+
+"Call by value" means that for reference types the formal parameters references the same objects as does the actual argument
+The arguments are sent into formal parameters using normal assignments because of call by value
+Any method applied to the formal parameter is also being applied to the actual argument
+
+The "equals" method can be used to determine if two reference types reference the same object
+It's a misnomer to say that two objects are "equal" because they seem to hold the same value. They are still different objects, even if they 
+hold the same value- they are both referencing different locations. 
+New operators, such as *, +, -, and so on cannot be used on objects. 
+
+The String is immutable, meaning that, once it's created, the contents of the string cannot be chnged
+We can add stings together in the following way 
+"a" + "b" + "c" will be rgarded as "abc" by the virtual machine
+
+I skipped a view pages because it was mostly stuff that I already knew - 
+Exceptions are objects that store information and are transmitted outside the normal return sequence. These are used to handle errors. They are 
+sent back to the calling sequence until some routine catches the exception. Here, we exxtract information related to the object to deal with 
+the error. 
+The "try" block is used to propegate errors
